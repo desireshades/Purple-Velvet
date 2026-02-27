@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purple Velvet</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#0f001a,#1a0033,#2a004d);
+    color:#fff;
+}
+
+section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+h1,h2{
+    margin-bottom:20px;
+}
+
+.neon-text{
+    color:#d580ff;
+    text-shadow:
+        0 0 5px #d580ff,
+        0 0 10px #c300ff,
+        0 0 20px #c300ff,
+        0 0 40px #9900cc;
+}
+
+p{
+    max-width:800px;
+    margin-bottom:25px;
+    opacity:0.9;
+    line-height:1.6;
+}
+
+.btn{
+    padding:12px 28px;
+    border:2px solid #d580ff;
+    background:transparent;
+    color:#fff;
+    cursor:pointer;
+    border-radius:30px;
+    transition:0.3s;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.btn:hover{
+    background:#d580ff;
+    box-shadow:0 0 15px #d580ff,0 0 30px #c300ff;
+    color:#000;
+}
+
+.card{
+    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.05);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 0 30px rgba(195,0,255,0.3);
+    max-width:900px;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    padding:15px;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a{
+    color:#d580ff;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav a:hover{
+    text-shadow:0 0 10px #d580ff;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    width:300px;
+}
+
+input,select{
+    margin-bottom:15px;
+    padding:10px;
+    border-radius:8px;
+    border:none;
+    outline:none;
+}
+
+footer{
+    padding:20px;
+    text-align:center;
+    background:#0a0014;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#membership">Membership</a>
+    <a href="#experience">Experience</a>
+    <a href="#resort">Resort</a>
+    <a href="#register">Register</a>
+</nav>
+
+<!-- Slide 1 -->
+<section id="home">
+    <div class="card">
+        <h1 class="neon-text">Purple Velvet</h1>
+        <p>Where Luxury Meets Desire. Step into a private world of elevated connection, magnetic chemistry, and unforgettable experiences.</p>
+        <button class="btn">Request Exclusive Access</button>
+    </div>
+</section>
+
+<!-- Slide 2 -->
+<section id="membership">
+    <div class="card">
+        <h2 class="neon-text">Unlock Private Membership</h2>
+        <p>Register to enter an elite circle of refined adults seeking unforgettable connections. Gain access to curated experiences, private events, and discreet networking.</p>
+        <button class="btn">Create VIP Profile</button>
+    </div>
+</section>
+
+<!-- Slide 3 -->
+<section id="experience">
+    <div class="card">
+        <h2 class="neon-text">Explore Without Limits</h2>
+        <p>Connect with like-minded couples and explore new dimensions of intimacy in a respectful, consensual environment. Empowerment through choice. Pleasure without judgment.</p>
+        <button class="btn">Join Inner Circle</button>
+    </div>
+</section>
+
+<!-- Slide 4 -->
+<section id="resort">
+    <div class="card">
+        <h2 class="neon-text">Monthly Luxury Resort Experiences</h2>
+        <p>Members receive exclusive invitations to neon-themed luxury resort retreats every month. Private escapes. Premium hospitality. Unforgettable memories.</p>
+        <button class="btn">Reserve Invitation</button>
+    </div>
+</section>
+
+<!-- Slide 5 -->
+<section id="register">
+    <div class="card">
+        <h2 class="neon-text">Become a Member</h2>
+        <p>Fill out the registration form below to activate your VIP access. Your privacy remains confidential.</p>
+        
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="number" placeholder="Age" required>
+            <select required>
+                <option value="">Relationship Status</option>
+                <option>Single</option>
+                <option>Couple</option>
+                <option>Married</option>
+            </select>
+            <button class="btn" type="submit">Submit & Enter Purple Velvet</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 Purple Velvet | Premium Private Experience
+</footer>
+
+</body>
+</html>
